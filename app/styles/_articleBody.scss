@@ -1,0 +1,155 @@
+body {
+	font-family: Georgia;
+	font-size: 1em;
+	line-height: 1.6875em;
+	font-style: normal;
+	font-weight: 400;
+}
+
+.wrapper{
+    max-width:960px;
+    padding:0 24px;
+    margin:0 auto;
+}
+
+
+blockquote {
+	margin-bottom: 25px;
+	margin-top: 28px;
+	font-size: 25px;
+	line-height: 27px;
+	text-align: center;
+	text-indent: 16px;
+	font-family: FuturaTW01-LightOblique;
+	// width: 22.4em;
+	float: none;
+	color: rgba(181,181,181,1);
+	// margin-left: 40px;
+}
+
+
+h1 {
+	font-size: 4.1875em;
+	line-height: 1.0597014925373em;
+	margin-bottom: .37313432835821em;
+	font-family: "Futura T W01 Demi";
+	text-transform: capitalize;
+	color: rgba(52,73,94,1);
+	// width: 7.2537313432836em;
+}
+
+
+h2 {
+	margin-bottom: .48em;
+	font-size: 1.5625em;
+	line-height: 1.08em;
+	letter-spacing: 1px;
+	font-family: "Futura T W01 Demi";
+	text-transform: capitalize;
+	margin-top: 1.76em;
+	// width: 19.6em;
+}
+
+
+h3 {
+	margin-top: 2.5625em;
+	margin-bottom: .75em;
+	font-size: 1em;
+	line-height: 1.6875em;
+}
+
+
+h4 {
+	margin-bottom: .75em;
+	margin-top: 2.5625em;
+	font-size: 1em;
+	line-height: 1.6875em;
+}
+
+
+h5 {
+	margin-top: 2.5625em;
+	margin-bottom: .75em;
+	font-size: 1em;
+	line-height: 1.6875em;
+}
+
+
+h6 {
+	margin-top: 2.5625em;
+	margin-bottom: .75em;
+	font-size: 1em;
+	line-height: 1.6875em;
+}
+
+
+p {
+	text-indent: 0em;
+	line-height: 1.6875em;
+	font-family: Georgia;
+	font-size: 1em;
+	font-style: normal;
+	font-weight: 400;
+	color: rgba(52,73,94,1);
+	// width: 3.3125em;
+}
+
+
+p.author {
+	text-indent: 0px;
+	margin-bottom: 2.0833333333333em;
+	font-size: .75em;
+	letter-spacing: 1px;
+	color: rgba(231,76,60,1);
+	font-family: HelveticaNeueW01-55Roma;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 2.3333333333333em;
+	// width: 3.666666666667em;
+}
+
+
+p.first {
+	font-size: 1em;
+	line-height: 1.6875em;
+}
+
+
+p.intro {
+	text-indent: 0px;
+	margin-bottom: .92592592592593em;
+	line-height: 1.2962962962963em;
+	font-size: 1.6875em;
+	letter-spacing: 0px;
+	font-family: "Futura T W01 Demi";
+	// width: 18.37037037037em;
+}
+
+
+div {
+	font-family: Georgia;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 1em;
+	line-height: 1.6875em;
+	// margin-left: 25.8125em;
+}
+
+
+p.media-source {
+	font-size: .6875em;
+	line-height: 1.4545454545455em;
+	color: rgba(231,76,60,1);
+	font-style: normal;
+	font-weight: 400;
+	font-family: HelveticaNeueW01-55Roma;
+}
+
+
+.lead-img{
+	margin: 0;
+	padding: 0;
+}
+
