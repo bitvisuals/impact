@@ -8,7 +8,14 @@ header { width: 100%; padding: 10px; background-color: #eee; color: white; }
     }
 }
 .header-options-toggle {
-    display: block; width: 31px; height: 31px; padding-left: 4px; float: right; color: black; text-decoration: none;
+    display: block;
+    width: 31px;
+    height: 31px;
+    padding-left: 4px;
+    float: right;
+    color: black;
+    text-decoration: none;
+    background: none;
+    border: none;
     i { font-size: 36px; line-height: 30px; }
 }
-.header-options { display: none; }
