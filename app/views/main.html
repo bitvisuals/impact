@@ -1,10 +1,8 @@
 <header class="clearfix">
-  <a class="header-logo" href="/"></a>
-  <a class="header-options-toggle" href="#"><i class="icon-expand-alt"></i></a>
+    <a class="header-logo" href="/"></a>
+    <button ng-click="toggleOptions = !toggleOptions" class="header-options-toggle"><i class="icon-expand-alt"></i></button>
 </header>
-<div class="header-options">options will come here</div>
-
-
+<div ng-show="toggleOptions" class="header-options">options will come here</div>
 
 <div class="grid">
 	<img class ="grid__item  one-whole lead-img" src="http://www.abcnyheter.no/files/imagecache/galleria_slide_wide/sxe5eb60.jpg">
@@ -45,24 +43,6 @@
 	</div>
 
 </div>
-
-
-
-
-    <div ng-controller="FetchCtrl">
-      <select ng-model="method">
-        <option>GET</option>
-        <option>JSONP</option>
-      </select>
-      <input type="text" ng-model="url" size="80"/>
-      <button ng-click="fetch()">fetch</button><br>
-      <button ng-click="updateModel('GET', 'http-hello.html')">Sample GET</button>
-      <button ng-click="updateModel('JSONP', 'http://dev-branch1.api.abcnyheter.no/v1/article/index.php?service=ABCNYHETER&scope=MYDESK_MODERATION_QUEUE&id=172142')">Sample JSONP</button>
-      <button ng-click="updateModel('JSONP', 'http://angularjs.org/doesntexist&callback=JSON_CALLBACK')">Invalid JSONP</button>
-      <pre>http status code: {{status}}</pre>
-      <pre>http response data: {{data}}</pre>
-    </div>
-
 
 
 

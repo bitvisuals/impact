@@ -118,59 +118,8 @@ angular.module('impactApp')
 
 
 
-  //   $http({method: 'GET', url: '/someUrl'}).
-	 //  success(function(data, status, headers, config) {
-	 //    // this callback will be called asynchronously
-	 //    // when the response is available
-	 //  }).
-	 //  error(function(data, status, headers, config) {
-	 //    // called asynchronously if an error occurs
-	 //    // or server returns response with an error status.
-	 // });
-
-    
-	//  function jsonp_callback(data) {
-	//     // returning from async callbacks is (generally) meaningless
-	//     console.log("DATA: " +data.found);
-	// }
-
-
-	
-
-
-
-	
-
-
 
   });
-
-
-
-
-
-function FetchCtrl($scope,$location) {
-
-	console.log("Hello")
-
-
-	// $scope.fetch = function(view){
-
-	// 	console.log("Klikk " + $scope.artID + " " + view);
-	// 	$location.path(view);
-		
-	// }
-
-
-}
-
-
-
-
-
-
-
-
 
 
 
