@@ -1,2 +1,14 @@
-header { height: 44px; width: 100%; padding: 10px; background-color: black; color: white; }
-.logo { padding: 3px; }
+header { width: 100%; padding: 10px; background-color: #eee; color: white; }
+.header-logo {
+    display: block; width: 162px; height: 31px; background: url(../images/logo-abcn.png) 0 0 no-repeat; float: left;
+    // retina display
+    @media all and (-webkit-min-device-pixel-ratio: 1.5) {
+        background-image: url(../images/logo-abcn@2x.png);
+        background-size: 162px 31px;
+    }
+}
+.header-options-toggle {
+    display: block; width: 31px; height: 31px; padding-left: 4px; float: right; color: black; text-decoration: none;
+    i { font-size: 36px; line-height: 30px; }
+}
+.header-options { display: none; }
