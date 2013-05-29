@@ -1,0 +1,56 @@
+.layout {
+    height: 480px;
+    position: relative;
+
+    .header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .body {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+        position: absolute;
+        top: 107px;
+        left: 0;
+        right: 0;
+        bottom: 67px;
+
+        &.body-smallheader {
+            top: 47px;
+        }
+
+        &.body-headerbar {
+            top: 102px;
+        }
+
+        &.body-headertabs {
+            top: 54px;
+        }
+
+        &.body-headersectiontitle {
+            top: 77px;
+        }
+
+        &.body-noheader {
+            top: 0;
+        }
+
+        &.body-footer-buttonbar {
+            bottom: 135px;
+        }
+
+        &.body-nofooter {
+            bottom: 0;
+        }
+    }
+
+    .footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+}

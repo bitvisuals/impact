@@ -1,0 +1,45 @@
+.globalmenu {
+    border-top: #79bc00;
+    background: #008633;
+    list-style: none;
+    padding: 12px 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-top: 2px solid #79bc00;
+
+    li {
+        border-top: 1px solid #79bc00;
+        color: #fff;
+        padding: 6px 4px;
+
+        &:last-child {
+            border-bottom: 1px solid #79bc00;
+        }
+
+        i {
+            margin-right:  10px;
+            vertical-align: middle;
+        }
+
+        span {
+            display: inline-block;
+            vertical-align: middle;
+            margin-top: 4px;
+        }
+
+        &.active {
+            color: #9cce43;
+
+            .icon-global-cart {
+                @extend .icon-global-cart-active !optional;
+            }
+
+            .icon-global-globe {
+                @extend .icon-global-globe-active !optional;
+            }
+
+            .icon-global-user {
+                @extend .icon-global-user-active !optional;
+            }
+        }
+    }
+}

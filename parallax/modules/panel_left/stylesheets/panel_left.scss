@@ -1,0 +1,13 @@
+// This is an example SCSS file belonging to this module
+// This SCSS code will need to be compiled into the modules.css file
+// in the "stylesheets" folder at the root level of this application.
+
+#panel-left {
+	width: 88%;
+	p {
+		display: block;
+		width: 100%;
+		height: 200px;
+		background: red;
+	}
+}

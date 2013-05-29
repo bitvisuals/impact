@@ -1,132 +1,26 @@
 
 <div class="grid">
-	<img class ="grid__item  one-whole lead-img" src="http://www.abcnyheter.no/files/imagecache/galleria_slide_wide/sxe5eb60.jpg">
+	<img class ="grid__item one-whole lead-img" src="{{art_images}}">
 </div>
 
-<div class="wrapper">
-	<div class="grid">
-		<div class="grid__item  one-whole  desk-one-whole">
 
-			<!-- {{author}}
-      {{byline}}
-      {{article_content}}
-      {{article_date}}
-      {{art_images}}
-     
-      {{ingress}}
-
-      {{art_title}} -->
-
-			<p class="author"> {{article_date | date:'medium'}}<br></p>
-
-			<h1>{{art_title}}</h1>
-
-			<!-- 	<p class="intro" >{{ingress}}</p>
-
-        TEST -->
+<div class="wrapper-outer">
+  <div class="wrapper">
+  	<div class="grid">
+  		<div class="grid__item  one-whole  desk-one-whole">
+  			
+        <p class="author"> {{article_date | date:'medium'}}<br></p>
+  			
+        <h1 ng-bind-html-unsafe="art_title"></h1>
+        
         <p class="intro" ng-bind-html-unsafe="ingress"></p>
 
-				<p class="author"><em>by</em>{{byline}}</p>
-
-				 	<!-- <p>{{article_content}}</p> -->
+  			<p class="author"><em>by</em> {{byline}}</p>
 
         <p ng-bind-html-unsafe="article_content"></p>
 
+  		</div>
+  	</div>
 
-		
-
-
-		<!-- 		<blockquote>- Jeg gikk rundt i den sotete leiligheten med pyntet juletre og svidde julegaver som jeg selv hadde sendt oppover. P&#229; bokseksjonen fant jeg julekortet jeg hadde sendt, helt nedsotet.&nbsp;</blockquote>
-
-				<p>ngen vet sikkert hva som for&#229;rsaket brannen, men det er ikke tvil om at det var &#229;pen ild i leiligheten. Moren bodde alene og ble funnet d&#248;d utenfor soveromsd&#248;ren.</p> -->
-
-				<!-- <iframe style="height: 580px;" class="one-whole" src="http://api.abcnyheter.no/fires/map.html?id=9681206"> Dude, your browser can't display an iframe. </iframe> -->
-		</div>
-	</div>
-
+  </div>
 </div>
-
-
-
-
-
-
-
-<div class="grid">
-    
-    <div class="grid__item  one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-one-third  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-two-thirds  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-quarter  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-quarter  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-half  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-third  lap-one-half  palm-one-whole">
-        <p class=demo-block>Foo</p>
-    </div><!--
-    
- --><div class="grid__item  one-whole  lap-one-half">
-        <p class=demo-block>Foo</p>
-    </div>
-    
-</div>
-
-
-
-
-<!-- 
-<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-<p class=text-cols--3>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-
-<p class=text-cols--2>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p> -->
-
-<!-- <div class="hero-unit">
-  <h1>'Allo, 'Allo!</h1>
-  <p>You now have</p>
-  <ul>
-      <li ng-repeat="thing in awesomeThings">{{thing}}</li>
-  </ul>
-  <p>installed.</p>
-  <h3>Enjoy coding! - Yeoman</h3>
-</div> -->
-
-
-
-
-
-
-

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--<html manifest="cache.appcache">-->
+<html>
+    <head>
+        <title>KIWI prototype</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        
+        <!-- Stylesheets (do not add any additional files!) -->
+        <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+
+        <!-- JAVASCRIPTS -->
+        
+        <!-- External js libraries -->
+        <script type="text/javascript" src="js/vendor/modernizr.js" defer></script>
+        <script type="text/javascript" src="js/vendor/jquery.js" defer></script>
+        <script type="text/javascript" src="js/vendor/underscore.js" defer></script>
+        <script type="text/javascript" src="js/vendor/tap.js" defer></script>
+
+        
+        <!-- Main application script [Required] -->
+        <script type="text/javascript" src="js/app.js" defer></script>
+        
+    </head>
+    <body>
+        <!-- Application body 
+        This basic markup is required.
+        -->
+        <div id="wrapper">
+            <div id="appViewport">
+                <div class="header">
+                    <div class="header-bar">
+                        <button class="pane-button left"></button>
+                        <span class="header-title">Handleliste</span>
+                        <button class="pane-button right"></button>
+                    </div>
+                    <div class="header-bar-bg"></div>
+                    <div class="header-arrow"></div>
+                </div>
+                <div id="moduleHolder">
+                    <section id="huskeliste">
+                        <div id="action-bar"><span class="action-button add-item-button">Legg til</span>'
+                        <span class="action-button edit-list-button">Rediger</span>'
+                        <span class="action-button clear-list-button">Tøm</span>'
+                        <span class="action-button done-editing-button">Ferdig</span></div>'
+                        <ul>
+                            <li id="listitem1" class="list-item">
+                                <span class="item-title">{{ Title }}</span>
+                                <span class="item-count">{{ Count }}</span>
+                                <span class="item-synonym-indicator synonyms"></span>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+                <div id="navigationBar" class="footer">
+                    <div id="button-huskeliste" class="modulebutton">Handleliste</div>
+                    <div id="button-minside" class="modulebutton">Trumf</div>
+                    <div id="button-errorreport" class="modulebutton">Feilrapportering</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

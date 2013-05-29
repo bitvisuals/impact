@@ -1,0 +1,14 @@
+i, .icon {
+    display: inline-block;
+    font-size: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &.left {
+        float: left;
+    }
+
+    &.right {
+        float: right;
+    }
+}

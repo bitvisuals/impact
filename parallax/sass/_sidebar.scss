@@ -1,0 +1,108 @@
+.sidebar {
+    background: #008633;
+}
+
+.sidebar-header {
+    background: #0f6d33;
+    padding: 5px 10px;
+    color: #9cce43;
+    font: 15px AntennaCond;
+
+    i {
+        vertical-align: middle;
+
+        + span {
+            margin-left: 4px;
+        }
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: center;
+        padding: 0 10px 0 0;
+        top: 1px;
+        position: relative;
+
+        &.active {
+            color: #fff;
+        }
+    }
+}
+
+.sidebar-image-add {
+    text-align: center;
+    position: relative;
+    background: #fff;
+
+    .sidebar-image-caption {
+        text-align: left;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 10px;
+        background: rgba(255,255,255,0.5);
+
+        h2 {
+            font-family: Duper;
+            font-size: 24px;
+            font-weight: bold;
+            color: #0f6d33;
+        }
+
+        small {
+            color: #666;
+        }
+    }
+
+    i {
+        position: absolute;
+        top: 10px;
+        right: 0;
+    }
+
+    img {
+        display: block;
+    }
+}
+
+.sidebar-footer {
+    text-align: center;
+    padding: 5px 10px;
+    background: #459f3a;
+    color: #fff;
+    font: 15px AntennaCond;
+
+    i {
+        vertical-align: middle;
+    }
+
+    span {
+        display: inline-block;
+        vertical-align: center;
+        padding: 0 10px 0 0;
+        top: 1px;
+        position: relative;
+    }
+}
+
+.sidebar-content {
+    border-top: 1px solid #398d1f;
+    padding: 10px 10px 10px 28px;
+    color: #9cce43;
+    font: 15px AntennaCond;
+}
+
+.sidebar-formrow {
+    padding: 0 0 10px 0;
+
+    input.text {
+        border-radius: 5px;
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+        border: none;
+        padding: 5px;
+        margin: 0 5px 0 0;
+        position: relative;
+        top: 1px;
+    }
+}

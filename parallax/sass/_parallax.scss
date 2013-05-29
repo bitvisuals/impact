@@ -1,0 +1,86 @@
+// @import "compass_twitter_bootstrap";
+@import "compass/css3";
+
+* {
+    @include box-sizing(border-box);
+    font: 12px arial;
+    padding: 0;
+    margin: 0;
+    line-height: 140%;
+    -webkit-user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #000;
+    text-align: center;
+}
+
+.info {
+    // display: none;
+    top: 0;
+    left: 0;
+    width: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 20px;
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    border: 1px solid #ccc;
+    
+    &#info1 {
+    }
+
+    &#info2 {
+        top: 50px;
+    }
+
+    &#info3 {
+        top: 100px;
+    }
+
+    &#info4 {
+        top: 150px;
+    }
+}
+
+
+.touch #scroller {
+    -webkit-overflow-scrolling: touch;
+}
+
+#scroller {
+    z-index: 1;
+    width: 320px;
+    margin: 0 auto;
+    background: #f2e5bf url(../img/bg.png) repeat-y ;
+    height: 100%;
+    text-align: left;
+    padding: 20px;
+    overflow-y: scroll;
+    position: relative;
+    transform : translateZ(0);
+    -webkit-perspective: 1000;
+    -webkit-backface-visibility: hidden;
+
+    &.touch-end {
+        -webkit-transition: background-position 1.5s ease-out; 
+    }
+
+    ul {
+        li {
+            list-style: none;
+            padding: 10px;
+            width: 100px;
+            background: white;
+            // background: rgba(255,255,255,0.8);
+            margin: 0 0 5px 0;
+            // box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+        }
+    }
+}

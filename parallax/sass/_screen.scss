@@ -1,0 +1,26 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+// Variables
+$headerColor : #4c566c;
+$tableTitleColor : black;
+$tableSubtitleColor : gray;
+$tableTouchDownColor : #2f7cd5;
+$tableBorderColor : #cccccc;
+
+// Compass
+@import "compass/reset";
+
+// Imports
+@import "mixins";
+@import "app";
+
+// Import the modules styles
+@import "../modules/minside/stylesheets/minside";
+@import "../modules/login/stylesheets/login";
+@import "../modules/huskeliste/stylesheets/huskeliste";
+@import "../modules/panel_left/stylesheets/panel_left";
+@import "../modules/panel_right/stylesheets/panel_right";

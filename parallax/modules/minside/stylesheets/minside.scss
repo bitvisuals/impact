@@ -1,0 +1,163 @@
+// ### MINSIDE STYLES ###
+
+// PLACEHOLDER SELECTORS
+// Defines the presentation for a
+// list item with a title and a subtitle
+// extend this for the apropriate span tags
+%titleAndSubtitle {
+	&.title {
+		display: block;
+		margin-bottom: 1px;
+	}
+	&.subtitle {
+		display: block;
+	}
+}
+
+// Outside classes
+.back-button {
+	@include back-button(5px,10px);
+	display: none;
+}
+
+#minside {
+	// Use the moduleholder background
+	background: inherit;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+
+	.loading {
+		margin: 50px auto;
+		width: 32px;
+		height: 32px;
+		background: url('../images/loader-black-big.gif') center center no-repeat;
+	}
+	.offline {
+		margin: 50px 10px;
+		font-weight: bold;
+	}
+
+	.panes-holder {
+		padding: 0;
+		overflow: hidden;
+		width: 300%;
+		height: 100%;
+
+		// General styles for this module
+		section {
+			height: 100%;
+			width: 33.3%;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			overflow-y: auto;
+  			-webkit-overflow-scrolling: touch;
+			
+			// List headers
+			h1 {
+				color : $headerColor;
+				font-size : 20px;
+				text-shadow: 1px 1px 1px #ffffff;
+				margin-left: 20px;
+				margin-bottom: 5px;
+			}
+
+			// The main list
+			ul {
+				background: white;
+				margin: 0px 10px 20px 10px;
+				list-style: none;
+				overflow: hidden;
+				min-width: 300px;
+				@include border-radius(5px);
+
+				li {
+					// The height of a cell is 48px
+					// remeber that we are using border-box
+					// so padding does not add to the height
+					height: 48px;
+					padding: 15px 10px 15px 10px;
+					border-bottom: 1px solid grey;
+
+					// Blue background when a finger is down
+					// Set this class «ontouchstart»
+					&.touchDown {
+						background: $tableTouchDownColor;
+
+						span {
+							color: white !important;
+						}
+					}
+
+					// Don't show a border under the
+					// last li element
+					&:last-child {
+						border-bottom: none;
+					}
+
+					div {
+						display: inline-block;
+						margin-top: -8px;
+					}
+
+					// Basic shared styling for li.spans
+					span {
+						&.title {
+							color: $tableTitleColor;
+							font-weight: bold;
+						}
+						&.subtitle {
+							color: $tableSubtitleColor;
+							font-size: smaller;
+						}
+						&.right {
+							float: right;
+							max-width: 180px;
+							overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+						}
+						&.arrow-next {
+							width: 16px;
+							height: 16px;
+							background: url('../images/icon-arrow-right.png') center center no-repeat;
+							background-size: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		#minside-first {
+			float: left;
+			// This table uses the title/subtitle layout
+			// so we extand the placeholder selector
+			ul.members {
+				overflow: hidden;
+				li {
+					span {
+						@extend %titleAndSubtitle;
+					}
+				}
+			}
+		}
+
+		#minside-second {
+			float: left;
+			.no-border {
+				border-bottom: none;
+			}
+		}
+
+		#minside-third {
+			float: left;
+			ul {
+				li {
+					span {
+						@extend %titleAndSubtitle;
+					}
+				}
+			}
+		}
+	}
+}

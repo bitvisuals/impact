@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>KIWI prototype</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" media="all">
+    <script src="js/vendor/modernizr.js"></script>
+</head>
+<body class="sg">
+    <div class="sg-page full-height transparent">
+        <div id="form" class="sg-form">
+            <form>
+                <label>Opacity (0-1)<span></span></label>
+                <input id="maxOpacity" type="range" min="0" max="1" step="0.1" value="0.9" />
+                
+                <label>Scroll opacity (0-1)<span></span></label>
+                <input id="minOpacity" type="range" min="0" max="1" step="0.1" value="0.4" />
+                
+                <label>Touch stop fade speed<span></span></label>
+                <input id="scrollStartFadeSpeed" type="range" min="1" max="800" step="1" value="100" />
+                
+                <label>Touch multiplier<span></span></label>
+                <input id="touchMultiplier" type="range" min="0.1" max="2" step="0.1" value="0.9" />
+                
+                <label>Release multiplier<span></span></label>
+                <input id="releaseMultiplier" type="range" min="0.1" max="2" step="0.1" value="1" />
+                
+                <label>Parallax speed 1<span></span></label>
+                <input id="parallaxOffset1" type="range" min="0" max="1" step="0.1" value="0.4" />
+                
+                <label>Parallax speed 2<span></span></label>
+                <input id="parallaxOffset2" type="range" min="0" max="1" step="0.1" value="0.6" />
+                
+                <label>Parallax speed 3<span></span></label>
+                <input id="parallaxOffset3" type="range" min="0" max="1" step="0.1" value="0.8" />
+
+                <label>Last opp bilder<span></span></label>
+                <div class="uploader">
+                    <div id="upload1" class="filedrop">1</div>
+                    <div id="upload2" class="filedrop">2</div>
+                    <div id="upload3" class="filedrop">3</div>
+                    <div id="progress" class="fileprogress"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="sg-page full-height transparent">
+        <div id="wrap" class="shopping-list">
+            <div id="scroller" class="shopping-list-scroller">
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/jquery.filedrop.js"></script>
+    <script src="js/vendor/tap.js"></script>
+    <script src="js/vendor/iscroll-lite.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app.parallax.js"></script>
+    <script src="js/app.init.js"></script>
+</body>
+</html>

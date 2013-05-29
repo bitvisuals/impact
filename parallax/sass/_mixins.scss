@@ -1,0 +1,87 @@
+@mixin user-select($args){
+    -moz-user-select:$args;
+    -webkit-user-select:$args;
+    -o-user-select:$args;
+    -ms-user-select:$args;
+    user-select:$args;
+    @if $args == none {
+        cursor: default;
+    }
+}
+
+@mixin back-button($top:0,$left:0,$color:rgba(74,108,155,1)) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    background-repeat:repeat-x;
+    background-color: $color;
+    background-image : -webkit-linear-gradient(
+        bottom,
+        rgba(0,0,0,0) 0%,
+        rgba(0,0,0,0) 50%,
+        rgba(255,255,255,0.1) 50%,
+        rgba(255,255,255,0.3) 100%
+        );
+    height:30px;
+    padding: 0 10px 0 10px;
+    border-radius: 6px;
+    font-size : 11px;
+    display : block;
+    text-align:center;
+    color:#fff;
+    text-shadow : 0px -1px 0px #000;
+    line-height : 30px;
+    font-weight: bold;
+}
+
+@mixin header-shadow {
+    @include box-shadow( 0 0 20px rgba(23,144,154,0.6) );
+}
+
+@mixin header-background-gradient {
+    background: -webkit-linear-gradient(top, rgba(180,187,191,0.97), rgba(218,224,225,0.97) 10px), url(../images/noise.png);
+    background: -moz-linear-gradient(top, rgba(180,187,191,0.97), rgba(218,224,225,0.97) 10px), url(../images/noise.png);
+    background: -o-linear-gradient(top, rgba(180,187,191,0.97), rgba(218,224,225,0.97) 10px), url(../images/noise.png);
+    background: -ms-linear-gradient(top, rgba(180,187,191,0.97), rgba(218,224,225,0.97) 10px), url(../images/noise.png);
+    background: linear-gradient(top, rgba(180,187,191,0.97), rgba(218,224,225,0.97) 10px), url(../images/noise.png);
+}
+
+@mixin gray-button {
+    background: rgb(238,238,238);
+    background: -moz-linear-gradient(top, rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1)));
+    background: -webkit-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: -o-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: -ms-linear-gradient(top, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+    background: linear-gradient(to bottom, rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%);
+}
+
+@mixin gray-button-pressed {
+    background: rgb(200,200,200);
+    background: -moz-linear-gradient(top, rgba(200,200,200,1) 0%, rgba(171,171,171,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(200,200,200,1)), color-stop(100%,rgba(171,171,171,1)));
+    background: -webkit-linear-gradient(top, rgba(200,200,200,1) 0%,rgba(171,171,171,1) 100%);
+    background: -o-linear-gradient(top, rgba(200,200,200,1) 0%,rgba(171,171,171,1) 100%);
+    background: -ms-linear-gradient(top, rgba(200,200,200,1) 0%,rgba(171,171,171,1) 100%);
+    background: linear-gradient(to bottom, rgba(200,200,200,1) 0%,rgba(171,171,171,1) 100%);
+}
+
+@mixin warning-button {
+    background: rgb(237,177,177);
+    background: -moz-linear-gradient(top, rgba(237,177,177,1) 0%, rgba(226,128,128,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(237,177,177,1)), color-stop(100%,rgba(226,128,128,1)));
+    background: -webkit-linear-gradient(top, rgba(237,177,177,1) 0%,rgba(226,128,128,1) 100%);
+    background: -o-linear-gradient(top, rgba(237,177,177,1) 0%,rgba(226,128,128,1) 100%);
+    background: -ms-linear-gradient(top, rgba(237,177,177,1) 0%,rgba(226,128,128,1) 100%);
+    background: linear-gradient(to bottom, rgba(237,177,177,1) 0%,rgba(226,128,128,1) 100%);
+}
+
+@mixin warning-button-pressed {
+    background: rgb(228,134,134);
+    background: -moz-linear-gradient(top, rgba(228,134,134,1) 0%, rgba(218,92,92,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(228,134,134,1)), color-stop(100%,rgba(218,92,92,1)));
+    background: -webkit-linear-gradient(top, rgba(228,134,134,1) 0%,rgba(218,92,92,1) 100%);
+    background: -o-linear-gradient(top, rgba(228,134,134,1) 0%,rgba(218,92,92,1) 100%);
+    background: -ms-linear-gradient(top, rgba(228,134,134,1) 0%,rgba(218,92,92,1) 100%);
+    background: linear-gradient(to bottom, rgba(228,134,134,1) 0%,rgba(218,92,92,1) 100%);
+}

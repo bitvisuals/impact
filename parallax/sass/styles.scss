@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+// Variables
+$headerTitleHeight   : 45px;
+$headerBarHeight     : 45px;
+$navigationBarHeight : 67px;
+$headerColor         : #4c566c;
+$tableTitleColor     : black;
+$tableSubtitleColor  : gray;
+$tableTouchDownColor : #2f7cd5;
+$tableBorderColor    : #cccccc;
+$tabsBgColor         : #333;
+$tabsBorderColor     : #666;
+$tabsTopColor        : #79bc00;
+$tabsBottomColor     : #48a137;
+
+// Imports
+@import "_fonts";
+@import "compass/css3";
+@import "_mixins";
+@import "_icons";
+@import "_icon";
+@import "_layout";
+@import "_header";
+@import "_footer";
+@import "_globalmenu";
+@import "_app";
+@import "_buttons";
+@import "_list";
+@import "_tabs";
+@import "_modules";
+@import "_sidebar";
+@import "_recipe";
+@import "_styleguide";
+
+// Import the modules styles
+// @import "../modules/minside/stylesheets/minside";
+// @import "../modules/login/stylesheets/login";
+// @import "../modules/huskeliste/stylesheets/huskeliste";
+// @import "../modules/panel_left/stylesheets/panel_left";
+// @import "../modules/panel_right/stylesheets/panel_right";

@@ -3,7 +3,7 @@
 angular.module('impactApp', [])
   .config(function ($routeProvider) {
     $routeProvider
-      .when('/', { templateUrl: 'views/main.html',controller: 'MainCtrl'})
+      .when('/', { templateUrl: 'views/select_article.html',controller: 'MainCtrl'})
       .when('/article', { templateUrl: 'views/article.html',controller: 'MainCtrl'})
       .otherwise({ redirectTo: '/'});
   });

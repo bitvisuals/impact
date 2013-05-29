@@ -1,0 +1,93 @@
+/* then for WOFF-capable browsers */
+@font-face {
+    font-family: Duper;
+    src: url("../fonts/DuperWebPro.woff") format("woff");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Duper;
+    src: url("../fonts/DuperWebPro-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Duper;
+    src: url("../fonts/DuperWebPro-Italic.woff") format("woff");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Duper;
+    src: url("../fonts/DuperWebPro-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Antenna;
+    src: 
+        local('☺'), 
+        url("../fonts/Antenna-Regular.ttf") format("truetype"),
+        url("../fonts/Antenna-Regular.svg") format("svg");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Antenna;
+    src: 
+        local('☺'), 
+        url("../fonts/Antenna-RegularItalic.ttf") format("truetype"),
+        url("../fonts/Antenna-RegularItalic.svg") format("svg");
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Antenna;
+    src: 
+        local('☺'), 
+        url("../fonts/Antenna-Medium.ttf") format("truetype"),
+        url("../fonts/Antenna-Medium.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Antenna;
+    src: 
+        local('☺'), 
+        url("../fonts/Antenna-MediumItalic.ttf") format("truetype"),
+        url("../fonts/Antenna-MediumItalic.svg") format("svg");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: Antenna;
+    src: 
+        local('☺'), 
+        url("../fonts/Antenna-Black.ttf") format("truetype"),
+        url("../fonts/Antenna-Black.svg") format("svg");
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AntennaCond;
+    src: 
+        local('☺'), 
+        url("../fonts/AntennaCond-Regular.ttf") format("truetype"),
+        url("../fonts/AntennaCond-Regular.svg") format("svg");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: AntennaCond;
+    src: 
+        local('☺'), 
+        url("../fonts/AntennaCond-Medium.ttf") format("truetype"),
+        url("../fonts/AntennaCond-Medium.svg") format("svg");
+    font-weight: bold;
+    font-style: normal;
+}

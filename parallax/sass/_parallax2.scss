@@ -1,0 +1,100 @@
+// @import "compass_twitter_bootstrap";
+@import "compass/css3";
+
+* {
+    @include box-sizing(border-box);
+    font: 12px arial;
+    padding: 0;
+    margin: 0;
+    line-height: 140%;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    background: #000;
+}
+
+#form {
+    background: #fff;
+    padding: 20px;
+    margin: 20px;
+    float: left;
+
+    label {
+        text-align: left;
+        clear: left;
+        width: 170px;
+        float: left;
+        padding: 3px 10px 3px;
+
+        span {
+            float: right;
+        }
+    }
+
+    input {
+        float: left;
+    }
+}
+
+#wrap {
+    -webkit-user-select: none;
+    height: 100%;
+    background: transparent url(../img/bg.jpg) repeat-y ;
+    width: 320px;
+    margin: 20px 0 0 0;
+    float: left;
+    
+    #scroller {
+        z-index: 1;
+        background: 
+            url(../img/bg3.png) repeat-y,
+            url(../img/bg2.png) repeat-y,
+            url(../img/bg1.png) repeat-y;
+        height: 100%;
+        text-align: left;
+        padding: 20px;
+        position: relative;
+        -webkit-transform: translatez(0);
+        transform: translatez(0);
+
+        ul {
+
+            li {
+                display: block;
+                list-style: none;
+                padding: 10px;
+                background: white;
+                // background: rgba(255,255,255,0.85);
+                margin: 0 0 5px 0;
+                box-shadow: 1px 1px 5px rgba(0,0,0,0.2);
+                // -webkit-transition: background 0.1s linear;
+            }
+        }
+
+        &.scrolling {
+            ul {
+                li {
+                    // background: rgba(255,255,255,0.6);
+                }
+            }
+        }
+
+        &.touchScroll {
+            overflow: auto;
+            -webkit-overflow-scrolling: touch;
+
+            ul {
+    
+                li {
+                    // box-shadow: none;
+                }
+            }
+        }
+
+    }
+}

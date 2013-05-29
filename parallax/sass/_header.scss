@@ -1,0 +1,129 @@
+@charset "utf-8";
+
+.header {
+    position: relative;
+    z-index: 10;
+
+    &.header-white {
+        .header-title {
+            background: #fff;
+            border-bottom: none;
+
+            h1 {
+                color: #000;
+                text-shadow: none;
+
+                b {
+                    font-weight: 900;
+                }
+            }
+        }
+    }
+
+    .header-title {
+        padding: 6px 6px 0 6px;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: $headerTitleHeight + 2;
+        position: relative;
+        border-bottom: 1px solid #307029;
+        @include background(
+            linear-gradient(
+                top,
+                #309831,
+                #439f21 20px
+            )
+        );
+
+        h1 {
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            position: absolute;
+            z-index: 5;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+            line-height: $headerTitleHeight + 2;
+        }
+    }
+
+    .header-bar {
+        height: $headerBarHeight;
+        position: relative;
+        z-index: 3;
+        top: -2px;
+        margin: 0 0 30px 0;
+        @include background(
+            linear-gradient(
+                top,
+                #afd363,
+                #afd363 2px,
+                #78b900 3px,
+                #c8e396
+            )
+        );
+
+        .icons {
+            @include display-box;
+            @include box-orient(horizontal);
+            @include box-align(stretch);
+
+            i {
+                @include display-box;
+                @include box-flex(1);
+
+                &.icon-top-heart {
+                    background-position: left center;
+                }
+
+                &.icon-top-plus {
+                    border-left: 1px solid #13747b;
+                    border-right: 1px solid #13747b;
+                }
+
+                &.icon-top-lightbulb {
+                    background-position: right center;
+                }
+            }
+        }
+
+        &:after {
+            content: " ";
+            width: 100%;
+            height: 30px;
+            background: url(../img/icon/header-arrow.png) no-repeat top left;
+            background-size: 320px 30px;
+            position: absolute;
+            bottom: -30px;
+            left: 0;
+        }
+    }
+
+    .header-sectiontitle {
+        color: #fff;
+        text-align: center;
+        background: #459f3a;
+        border-top: 1px solid #43b61d;
+        border-bottom: 1px solid #307029;
+        padding: 5px 0;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .header-buttonbar {
+        background: #fff;
+        padding: 10px 40px;
+        box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+
+    .icon-header-leaf {
+        position: absolute;
+        display: block;
+        top: 0;
+        right: 45px;
+        z-index: 4;
+    }
+}
