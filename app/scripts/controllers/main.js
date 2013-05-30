@@ -97,28 +97,31 @@ angular.module('impactApp')
 
 
 		//  var url = "http://dev-branch1.api.abcnyheter.no/v1/article/index.php?service=ABCNYHETER&scope=PUBLISHED_TODAY&id="+$scope.artID+"&callback=JSON_CALLBACK";
-		var url = "http://dev-branch1.api.abcnyheter.no/v1/article/index.php?service=ABCNYHETER&scope=PUBLISHED_TODAY&id=172142&callback=JSON_CALLBACK";
+
+
+
+		// 	var url = "http://dev-branch1.api.abcnyheter.no/v1/article/index.php?service=ABCNYHETER&scope=PUBLISHED_TODAY&id=172125&callback=JSON_CALLBACK";
   			
 
 
-		$http.jsonp(url).success(function(data, status, headers, config) {
-				console.log(data.articles[0]);
+		// $http.jsonp(url).success(function(data, status, headers, config) {
+		// 		console.log(data.articles[0]);
 
-				$scope.author = data.articles[0].author;
-		 		$scope.byline = data.articles[0].byline;
-		 		$scope.article_content = data.articles[0].content; 
-				$scope.article_date = data.articles[0].date;
+		// 		$scope.author = data.articles[0].author;
+		//  		$scope.byline = data.articles[0].byline;
+		//  		$scope.article_content = data.articles[0].content; 
+		// 		$scope.article_date = data.articles[0].date;
 				
-				//If img[0] else img[1]
-				$scope.art_images = data.articles[0].images[0].url;
-		 		$scope.ingress = data.articles[0].ingress;
-				$scope.art_title = data.articles[0].title;
+		// 		//If img[0] else img[1]
+		// 		$scope.art_images = data.articles[0].images[0].url;
+		//  		$scope.ingress = data.articles[0].ingress;
+		// 		$scope.art_title = data.articles[0].title;
 
 		         
-		    }).
-		    error(function(data, status, headers, config) {
-		        $scope.error = true;
-		    });
+		//     }).
+		//     error(function(data, status, headers, config) {
+		//         $scope.error = true;
+		//     });
 			
 
 
@@ -153,5 +156,80 @@ angular.module('impactApp')
 
 
 
-  });
+  })
+
+
+.controller('ArticleCtrl', function ($scope, $routeParams, $http) {
+
+
+
+		// // var artID = 142201;
+		// var artID = 172142;
+		// // var artID = 172125;
+
+		console.log("TRY\n142201\n172142\n172125")
+		console.log("Retrieving article with ID: "+$routeParams.artID)
+
+		var leadImg = $('.lead-img');
+
+  		window.onscroll = function(e){
+	  		leadImg.css({
+	  			top: window.pageYOffset/2 + 'px',
+	  			opacity: (leadImg.height() - window.pageYOffset)/leadImg.height()
+	  		})
+  		}
+
+
+
+  		var url = "http://dev-branch1.api.abcnyheter.no/v1/article/index.php?service=ABCNYHETER&scope=PUBLISHED_TODAY&id="+$routeParams.artID+"&callback=JSON_CALLBACK";
+  			
+
+
+		$http.jsonp(url).success(function(data, status, headers, config) {
+				console.log(data.articles[0]);
+
+				$scope.author = data.articles[0].author;
+		 		$scope.byline = data.articles[0].byline;
+		 		$scope.article_content = data.articles[0].content; 
+				$scope.article_date = data.articles[0].date;
+				
+				//If img[0] else img[1]
+				$scope.art_images = data.articles[0].images[0].url;
+		 		$scope.ingress = data.articles[0].ingress;
+				$scope.art_title = data.articles[0].title;
+
+		         
+		    }).
+		    error(function(data, status, headers, config) {
+		        $scope.error = true;
+		    });
+
+
+
+ //  	$scope.article = Article.get({artID: $routeParams.artID}, function(article) {
+
+	// 		console.log(article[0])
+
+ //   		$scope.mainImageUrl = article.images[0];
+	// });
+
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
