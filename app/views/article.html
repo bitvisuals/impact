@@ -1,7 +1,14 @@
+
+          <div main-directive>
+            <p class="hello">Hello there</p>
+          </div>
+
+
+
 <div>
  
   <div class="grid">
-  	<img class ="grid__item one-whole lead-img" src="{{art_images}}">
+  	<img class ="grid__item one-whole lead-img" src="{{Article.images[0].url}}">
   </div>
 
   <div class="wrapper-outer">
@@ -9,15 +16,17 @@
     	<div class="grid">
     		<div class="grid__item  one-whole  desk-one-whole">
     			
-          <p class="author"> {{article_date | date:'medium'}}<br></p>
+          <p class="author">{{Article.date}} {{Article.date | date:'dd MMM yyyy'}}<br></p>
   
-          <h1 ng-bind-html-unsafe="art_title"></h1>
+          <h1 ng-bind-html-unsafe="Article.title"></h1>
           
-          <p class="intro" ng-bind-html-unsafe="ingress"></p>
+          <p class="intro" ng-bind-html-unsafe="Article.ingress"></p>
 
-    			<p class="author"><em>by</em> {{byline}}</p>
+    			<p class="author"><em>by</em> {{Article.byline}}</p>
 
-          <p ng-bind-html-unsafe="article_content"></p>
+          <p ng-bind-html-unsafe="Article.content"></p>
+
+
 
     		</div>
     	</div>
@@ -25,3 +34,13 @@
   </div>
 
 </div>
+
+
+
+<!--  
+TODO
+- date - få den riktig
+- flere bilder??
+
+
+-->

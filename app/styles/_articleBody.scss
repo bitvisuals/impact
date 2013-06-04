@@ -3,6 +3,10 @@ html{
 	background-image: url("../images/cream_pixels.png");
 }
 
+.hide{
+	background: red;
+}
+
 .wrapper-outer{
 	padding-top: 50px;
 	width: 100%;
@@ -12,7 +16,7 @@ html{
 }
 
 .wrapper{
-    max-width:960px;
+    max-width:580px;
     padding:0 24px;
     margin:0 auto;
   /*  z-index: 2;
